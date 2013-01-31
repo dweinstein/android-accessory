@@ -12,5 +12,5 @@ include_directories ("${PROJECT_SOURCE_DIR}/include")
 
 add_executable(accessory-mode src/generic.c)
 target_link_libraries(accessory-mode ${LIBS})
-
-
+set(CMAKE_BUILD_TYPE Debug)
+set(CMAKE_C_FLAGS_DEBUG "-Wall")
